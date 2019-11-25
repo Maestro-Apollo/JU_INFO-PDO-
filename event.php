@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>Image Gallery with CSS Grid & Flexbox</title>
   <link rel="stylesheet" href="css/fontawesme.min.css">
-  <link rel="stylesheet" href="css/reset.min.css">
+  <!-- <link rel="stylesheet" href="css/reset.min.css"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/eventcss.css">
   <link rel="stylesheet" href="css/style.css">
@@ -12,12 +13,23 @@
 
 </head>
 <body>
+  <?php include 'menu.php'; ?>
 <!-- partial:index.partial.html -->
-<div class="container">
+<div class="container text-center">
+  <div class="display-2 text-dark">
+    <span>Welcome </span>
+    <strong class="text-success"><?php
+    echo $_SESSION['name'];
+    ?>!</strong>
 
-	<h1 class="heading">Image Gallery with CSS Grid <span>& Flexbox Fallback</span></h1>
+  </div>
+  <div class="p-5">
+    <a href="update.php?name=<?php echo $_SESSION['name']; ?>" class="btn btn-info form-control display-3" style="max-width:300px;">Update Profile</a>
+  </div>
 
-	<div class="gallery">
+	<h1 class="display-4 m-5">Our Events</h1>
+
+	<div class="gallery mb-5">
 
 		<div class="gallery-item">
 			<img class="gallery-image" src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=500&h=500&fit=crop" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
@@ -49,7 +61,7 @@
 <!-- partial -->
 
 
-
+    <?php include 'footer.php'; ?>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

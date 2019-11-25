@@ -416,12 +416,12 @@ a,p{
 }
 
 .update_part{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/horizon-768759_1920.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/books-1163695_1920.jpg);
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 .update_part .update_layout{
     border: 1px solid #000;
@@ -600,13 +600,3 @@ a,p{
         transform: rotateY(0deg);
     }
 }
-
-
-
-
-
-
-
-
-
-

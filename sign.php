@@ -27,6 +27,12 @@ include 'classes/sign.class.php';
             <form action="" method="post" autocomplete="off">
 
                 <h1>Sign In</h1>
+                <?php
+                if(isset($Sobj)){
+                  echo $Sobj;
+                }
+
+                 ?>
                 <input type="text" name="username" placeholder="Username" class="username" autocomplete="off"><br><br>
                 <input type="password" name="password" placeholder="Password" class="password" autocomplete="off"><br><br>
                 <input type="submit" value="Submit" class="submit" name="submit"><br><br>

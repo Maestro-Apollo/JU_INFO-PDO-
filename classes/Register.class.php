@@ -25,6 +25,7 @@ class Insert extends Database
         }else{
           $insertQuery = "Insert into user_tbl(username,email,password,gender) values('$username','$email','$password','$gender')";
           if(mysqli_query($this->link,$insertQuery)){
+
             $msg = "<div class='alert alert-success lead'><strong>Data Added Successfully!</strong></div>";
             return $msg;
           }else{
