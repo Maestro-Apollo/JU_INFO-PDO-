@@ -2,7 +2,7 @@
 
 <?php
 
-
+include 'classes/Register.class.php';
 
 ?>
 <!DOCTYPE html>
@@ -33,11 +33,16 @@
             <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
 
                 <h1>Registration</h1>
-                <input type="text" name="username" placeholder="Username" class="username" autocomplete="off" required><br><br>
-                <input type="email" name="email" placeholder="Email" class="email" autocomplete="off" required><br><br>
-                <input type="password" name="password" placeholder="Password" class="password" autocomplete="off" required><br><br>
+                <?php
+                if(isset($obj)){
+                  echo $obj;
+                }
+                ?>
+                <input type="text" name="username" placeholder="Username" class="username" autocomplete="off"><br><br>
+                <input type="email" name="email" placeholder="Email" class="email" autocomplete="off"><br><br>
+                <input type="password" name="password" placeholder="Password" class="password" autocomplete="off"><br><br>
 
-                <select name="gender" id="gender" class="gender" required>
+                <select name="gender" id="gender" class="gender">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select><br><br>

@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<?php
+include 'classes/Database.php';
+$obj = new Database;
+
+?>
+
 <html lang="en">
 
 <head>
