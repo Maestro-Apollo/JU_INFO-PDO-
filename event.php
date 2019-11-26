@@ -56,9 +56,9 @@
 		</div>
 
 	</div>
-
+<a href="ticket.php?name=<?php echo $_SESSION['name']; ?>" class="btn btn-info mb-5">BUY TICKET</a>
 </div>
-<a href=""></a>
+
 <!-- partial -->
 
 
