@@ -3,7 +3,8 @@
 
 <!DOCTYPE html>
 <?php include 'classes/updatePage.php';
- include 'classes/update.class.php';?>
+ include 'classes/update.class.php';
+ include 'classes/delete.class.php';?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,15 +25,18 @@
               if(isset($getUp)){
                 echo $getUp;
               }
+              if(isset($dObj)){
+                echo $dObj;
+              }
 
                ?>
-              <input type="text" name="old_username" class="old_username" placeholder="Previous Username" value="<?php echo $updateObj['username']; ?>" required><br><br>
+              <input type="text" name="old_username" class="old_username" placeholder="Previous Username" value="<?php echo $updateObj['username']; ?>"><br><br>
 
                <input type="text" name="update_username" class="update_username" placeholder="New Username"><br><br>
                <input type="text" name="update_password" class="update_password" placeholder="New Password" value=""><br><br>
                <input type="text" name="update_email" class="update_email" placeholder="New Email" value="<?php echo $updateObj['email']; ?>"><br><br>
 
-               <input type="submit" name="Submit" value="submit" class="submit"><br><br>
+               <input type="submit" name="Submit" value="Update" class="submit"><br><br>
                <input type="submit" name="Submit2" value="Delete" class="delete">
 
             </form>
