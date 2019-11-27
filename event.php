@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php session_start();
+if($_SESSION['name'] == true){
+
+}else{
+    header('location:sign.php');
+}
+
+?>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
@@ -18,14 +25,17 @@
 <div class="container text-center">
   <div class="display-2 text-dark">
     <span>Welcome </span>
-    <strong class="text-success"><?php
+    <strong class="text-success">
+    <?php
     echo $_SESSION['name'];
     ?>!</strong>
 
   </div>
   <div class="p-5">
     <a href="update.php?name=<?php echo $_SESSION['name']; ?>" class="btn btn-info form-control display-3" style="max-width:300px;">Update Profile</a>
+    <a href="logout.php" class="btn btn-danger form-control display-3" style="max-width:300px;">Logout</a>
   </div>
+
 
 	<h1 class="display-4 m-5">Our Events</h1>
 

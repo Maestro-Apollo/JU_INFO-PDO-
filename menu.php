@@ -26,16 +26,8 @@
                                     <a class="dropdown-item" href="#">JoBike</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Event
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Recent Event</a>
-                                    <a class="dropdown-item" href="#">Upcoming Event</a>
-
-
-                                </div>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="event.php">Event <span class=""></span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

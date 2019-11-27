@@ -3,6 +3,11 @@
 <?php
 session_start();
 $name = $_SESSION['name'];
+if($name == true){
+
+}else{
+    header('location:sign.php');
+}
 
 include 'classes/event.class.php';
 ?>
